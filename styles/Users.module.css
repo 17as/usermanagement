@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.userButton {
+  padding: 1.5rem;
+  border-radius: 6px;
+  transition: background-color 1s ease, border-color 0.15s ease;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  font-size: large;
+  width: 400px;
+}
+
+.userButton:hover,
+.userButton:focus,
+.userButton:active {
+  background-color: royalblue;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .userButton {
+    width: 255px;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+  .userButton {
+    width: 300px;
+  }
+}

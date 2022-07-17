@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Known issues
+
+- the users json is generated with https://www.mockaroo.com/ (and used what they had available there) and the groups data is harcoded + randomly assigned to user from the code (utils.ts). Normaly is supposed to be some enpoint here.
+- Only users can be deleted/added (however same logic for the groups but not enough time)
+- no time for adding any tests
+- the form has no validation (might be buggy as well since it was the last feature added so very on rush :))
+- Is is SPA (mo data reload and no route change)
+
 ## Getting Started
 
 First, run the development server:
